@@ -38,4 +38,7 @@ android {
 dependencies {
     provided 'com.google.android.things:androidthings:0.1-devpreview'
     compile "com.android.support:support-v4:24.0.+"
+    compile ('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
 }

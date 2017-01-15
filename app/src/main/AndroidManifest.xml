@@ -15,12 +15,15 @@
   limitations under the License.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.androidthings.futureframes">
+    package="co.nz.psyqor.androidthings.futureframes">
 
     <application
+        android:name="co.nz.psyqor.androidthings.futureframes.MyApp"
         android:allowBackup="true"
         android:icon="@android:drawable/sym_def_app_icon"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        >
 
         <uses-library android:name="com.google.android.things"/>
 

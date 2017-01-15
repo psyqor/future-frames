@@ -21,7 +21,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.example.androidthings.myproject"
+        applicationId "co.nz.psyqor.androidthings.futureframes"
         minSdkVersion 24
         targetSdkVersion 24
         versionCode 1
@@ -37,4 +37,5 @@ android {
 
 dependencies {
     provided 'com.google.android.things:androidthings:0.1-devpreview'
+    compile "com.android.support:support-v4:24.0.+"
 }

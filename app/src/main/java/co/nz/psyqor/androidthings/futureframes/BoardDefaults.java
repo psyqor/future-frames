@@ -24,6 +24,9 @@ import java.util.List;
 
 @SuppressWarnings("WeakerAccess")
 public final class BoardDefaults {
+    public static int DISPLAY_WIDTH = 800;
+    public static int DISPLAY_HEIGHT = 480;
+
     private static final String DEVICE_EDISON_ARDUINO = "edison_arduino";
     private static final String DEVICE_EDISON = "edison";
     private static final String DEVICE_RPI3 = "rpi3";

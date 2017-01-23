@@ -48,8 +48,8 @@ public class SlideshowHelper {
         List<String> paths = new ArrayList<>();
         File slideshowFolder = new File(localDownloadDirectory());
         for(File f: slideshowFolder.listFiles()){
-            Log.i(TAG, "Found existing image "+ localDownloadPath(f.getName()));
-            paths.add(localDownloadPath(f.getName()));
+            Log.i(TAG, "Found existing image "+ localSlideshowImagePath(f.getName()));
+            paths.add(localSlideshowImagePath(f.getName()));
         }
         return paths;
     }
@@ -98,8 +98,14 @@ public class SlideshowHelper {
     }
 
     // external_sd_card_directory/slideshows/{id}/{key}
-    public String localDownloadPath(String key){
+    public String localSlideshowImagePath(String key){
         return localDownloadDirectory() + "/" + key;
     }
+
+    // external_sd_card_directory/{key}
+    public String localDownloadPath(String key){
+        return context.getExternalFilesDir(null)  + "/" + key;
+    }
+
 
 }

@@ -45,7 +45,7 @@ public class DisplayActivity extends FragmentActivity {
         mPager = (AutoScrollViewPager) findViewById(R.id.pager);
         configurePager();
 
-        int currentSlideshowId = 2;
+        int currentSlideshowId = 1;
         slideshowManager = new SlideshowManager(this, currentSlideshowId);
         slideshowManager.refresh();
         refreshAdapter();

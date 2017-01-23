@@ -15,10 +15,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.R.attr.key;
-import static android.R.attr.path;
 import static android.content.ContentValues.TAG;
-import static co.nz.psyqor.androidthings.futureframes.Util.deleteFile;
 
 /**
  * Created by psyqor on 23/01/17.
